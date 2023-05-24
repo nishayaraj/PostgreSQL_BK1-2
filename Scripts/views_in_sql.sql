@@ -61,10 +61,11 @@ create view sales2018 as
 select * from sales2018
 
 --Create a view that shows the employee at each dealership with the most number of sales.
-(select count(sale_id) as number_of_sales, employee_id, dealership_id
-from sales
-group by employee_id, dealership_id 
-order by number_of_sales desc) as sales_per_employee
+--modify to find max
+--(select count(sale_id) as number_of_sales, employee_id, dealership_id
+--from sales
+--group by employee_id, dealership_id 
+--order by number_of_sales desc) as sales_per_employee
 
 
 
